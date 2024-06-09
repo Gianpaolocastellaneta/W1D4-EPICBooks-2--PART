@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/custom.css" />
+  <title>EpicBooks</title>
+
+</head>
+
+<body>
+
+
+  <h1 class="text-center pt-4">E P I C B o o k s</h1>
+  <div class="container mt-4">
+    <div class=" ricerca text-center my-5">
+      <input type="text" onkeyup="searchBook(event)" placeholder="Cerca..." />
+    </div>
+    <div class="carrello">
+      <h2 class="text-center mt-5">Carrello</h2>
+      <div class="text-center mt-3">
+        <h4>Totale: €<span id="totalPrice">0.00</span></h4>
+        <div id="cart" class="mt-3 mb-3"></div>
+        <div id="emptyCartButtonContainer" class="text-center mt-3 mb-3"></div>
+      </div>
+    </div>
+    <div id="bookOutput" class="row mt-4"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
